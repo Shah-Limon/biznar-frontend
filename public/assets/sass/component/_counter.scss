@@ -1,0 +1,82 @@
+/*-------------------------------------------------------
+03. Counter Css  
+---------------------------------------------------------*/
+
+.center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.counter-1 {
+	position: absolute;
+    bottom: 0;
+    left: 5rem;
+	background-color: var(--clr-white);
+	padding: 3rem 2rem;
+	&::before {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 45%;
+		height: 2px;
+		width: 14rem;
+		background-color: var(--clr-def);
+		translate: -50% 0;
+	}
+	.fun-fact {
+		margin-right: 2rem;
+		padding-right: 2rem;
+		border-right: 1px solid var(--clr-heading);
+		&:last-child {
+			margin-right: 0rem;
+			padding-right: 0rem;
+			border-right: none;
+		}
+		.fun-desc {
+			.fun-arrow {
+				display: flex;
+				align-items: center;
+				margin-bottom: 2rem;
+				.fun-counter {
+					display: flex;
+					align-items: center;
+					p {
+						color: var(--clr-heading);
+						font-size: 2.4rem;
+						position: relative;
+						z-index: 1;
+						display: inline-block;
+						font-family: var(--font-2);
+						margin-bottom: 0;
+						line-height: 1;
+						font-weight: 500
+					}
+					.counter-ext {
+						color: var(--clr-heading);
+						display: block;
+						line-height: 1;
+						font-weight: 500;
+						font-size: 2.4rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.medium {
+    font-weight: 500;
+    color: var(--clr-heading);
+}
+
+.fun-arrow {
+	i {
+		rotate: 25deg;
+		display: inline-block;
+		margin-left: 2rem;
+		color: var(--clr-heading);
+		translate: 0 -2px;
+	}
+}

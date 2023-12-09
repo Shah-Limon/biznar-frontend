@@ -1,0 +1,51 @@
+/*-------------------------------------------------------
+37. Step css
+---------------------------------------------------------*/
+
+
+
+.step-margin {
+	margin: 25px 0 58px 0;
+}
+
+.step-box {
+    rotate: -45deg;
+    text-align: center;
+	.headin-5 {
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: var(--clr-white);
+		-webkit-text-stroke: 2px black;
+		letter-spacing: 3px;
+	}
+}
+
+.step-triangle {
+    border: 1px solid #000;
+    height: 24rem;
+    width: 28rem;
+    display: block;
+    margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	i {
+		height: 9rem;
+		width: 9rem;
+		display: inline-block;
+		line-height: 9rem;
+		text-align: center;
+		background: var(--clr-def);
+		color: var(--clr-white);
+		font-size: 4rem;
+		position: absolute;
+		bottom: -1px;
+		left: -1px;
+	}
+	.step-dot {
+		position: absolute;
+		top: 10px;
+		right: 7px;
+		height: 110px;
+		filter: hue-rotate(45deg);
+	}
+}

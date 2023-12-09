@@ -1,0 +1,44 @@
+/*-------------------------------------------------------
+31. Project css 
+---------------------------------------------------------*/
+
+.project-box {
+    display: flex;
+	gap: 3rem;
+}
+
+.project-desc {
+	.project-sidebar-single {
+		margin-left: -10rem;
+		ul {
+			li {
+				font-family: var(--font-1);
+				font-weight: 500;
+				line-height: 33px;
+				color: var(--clr-heading);
+				text-transform: capitalize;
+				border-bottom: 1px solid #e7e7e7;
+				display: block;
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+					padding-bottom: 0;
+					border-bottom: none;
+				}
+				span {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+} 
+
+.project-title {
+    text-transform: capitalize;
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: var(--font-1);
+}
+

@@ -1,0 +1,142 @@
+/*-------------------------------------------------------
+31. Heading css 
+---------------------------------------------------------*/
+
+.heading-1 {
+	font-size: 42px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.heading-light-1 {
+	font-size: 42px;
+    line-height: 50px;
+	font-weight: 200;
+}
+
+.heading-2 {
+	font-size: 36px;
+	line-height: 50px;
+	font-weight: 600;
+}
+
+.heading-light-2 {
+	font-size: 36px;
+	line-height: 50px;
+	font-weight: 200;
+}
+
+.heading-3 {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 600;
+}
+
+.heading-light-3 {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 200;
+}
+
+.heading-4 {
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 600;
+}
+
+.heading-light-4 {
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 200;
+}
+
+.heading-5 {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 600;
+}
+
+.heading-light-5 {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 200;
+}
+
+.heading-6 {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 600;
+}
+
+.heading-light-6 {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 200;
+}
+
+.para {
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+}
+
+.faq-para {
+	font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--clr-heading);
+}
+
+.hero-title {
+	font-size: 7.2rem;
+    line-height: 7.6rem;
+    font-weight: 600;
+    font-family: var(--font-2);
+	span {
+		color: var(--clr-def-2);
+		font-family: var(--font-2);
+		font-weight: 200;
+		border-bottom: 3px solid var(--clr-def);
+	}
+}
+
+.hero-title-light {
+	font-size: 7.2rem;
+    line-height: 7.6rem;
+	font-weight: 300;
+	font-family: var(--font-2);
+	span {
+		color: var(--clr-def);
+		font-family: var(--font-2);
+		font-weight: 200;
+	}
+}
+
+.hero-title-2 {
+    font-size: 90px;
+    line-height: 1.1em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.hero-sub-title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 1;
+	display: inline-block;
+	font-family: var(--font-2);
+	color: var(--clr-def);
+	text-transform: uppercase;
+}
+
+.hero-sub-title-light {
+	font-size: 2.2rem;
+	font-weight: 300;
+	line-height: 1;
+	display: inline-block;
+	font-family: var(--font-2);
+	color: var(--clr-def);
+	text-transform: uppercase;
+}
+
+/* CSS Document */
+

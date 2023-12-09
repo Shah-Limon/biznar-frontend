@@ -1,0 +1,54 @@
+/*-------------------------------------------------------
+27. Topbar css 
+---------------------------------------------------------*/
+
+.top-bar-area {
+	&::before {
+		position: absolute;
+		background: var(--clr-gradient);
+		content: '';
+		z-index: -1;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+.topbar-before-off {
+	&::before {
+		display: none;
+	}
+}
+.top-box {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	color: var(--clr-heading);
+	i {
+		color: var(--clr-def);
+	}
+}
+
+.top-box.top-location {
+	justify-content: flex-end;
+}
+
+.top-box.top-login {
+	justify-content: flex-end;
+}
+
+.top-login {
+	
+}
+
+.topbar-white {
+	.top-box {
+		color: var(--clr-white);
+		i {
+			color: var(--clr-white);
+		}
+		a {
+			color: var(--clr-white);
+		}
+	}
+}

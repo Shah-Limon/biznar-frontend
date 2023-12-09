@@ -1,0 +1,169 @@
+/*-------------------------------------------------------
+26. Service CSS 
+---------------------------------------------------------*/
+
+.service-box {
+    background-color: var(--clr-white);
+	box-shadow: 1 10px 60px rgba(0, 0, 0, 0.15);
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&:hover {
+		.service-btn {
+			color: var(--clr-def);
+			&::before {
+				width: 9%;
+			}
+		}
+	}
+	.service-shape {
+		@include pos-abs(var(--clr-bg),10rem,2rem,1);
+		top: -5px;
+		right: 6rem;
+		display: block;
+		transform: skewY(50deg);
+		right: 0rem;
+		&::before {
+			@include pos-abs(var(--clr-bg),10rem,2rem,1);
+			top: -5px;
+			right: 6rem;
+		}
+		&::after {
+			@include pos-abs(var(--clr-bg),10rem,2rem,1);
+			top: -5px;
+			right: 30px;
+		}
+	}
+	.service-icon-title {
+		padding: 6rem 4rem 0 4rem;
+		i {
+			display: block;
+			margin-bottom: 2rem;
+			img {
+				width: 90px;
+			}
+		}
+		h4 {
+			font-size: 5rem;
+			line-height: 57px;
+			margin-bottom: 3rem;
+		}
+	}
+	.service-desc {
+		position: relative;
+		z-index: 1;
+		margin: 0 3rem;
+		padding: 8rem 3rem 3rem 3rem;
+		&:before {
+			@include pos-abs(var(--clr-black),100%,100%,1);
+			top: 35px;
+			left: 0;
+			transform: skewY(9deg);
+			border-radius: 10px;
+		}
+		p {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.service-btn {
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-block;
+	color: rgba(255,255,255,.7);
+	position: relative;
+	z-index: 1;
+	padding-left: 5rem;
+	letter-spacing: 1px;
+	&::before {
+		@include pos-abs(var(--clr-white),1px,4rem,.7);
+		top: 50%;
+		translate: 0 -50%;
+		left: 0;
+		transition: all .5s ease;
+	}
+}
+
+//Service
+
+
+.service-box-2 {
+	position: relative;
+	z-index: 1;
+    padding: 35px 35px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--clr-white);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+	text-align: center;
+	.service-pic-2 {
+		margin-bottom: 2rem;
+	}
+	.service-desc-2 {
+		.heading-4 {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.service-shape-16 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	translate: 0 -50%;
+	z-index: -1;
+	width: 50%;
+}
+
+.service-shape-17 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+
+//Service 3
+
+.service-box-3 {
+	position: relative;
+	z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--clr-white);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+	text-align: center;
+	.service-icon-3 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		i {
+			height: 9rem;
+			width: 9rem;
+			line-height: 9rem;
+			text-align: center;
+			font-size: 3rem;
+			background-color: var(--clr-def);
+			color: var(--clr-white);
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+		}
+	}
+	.service-desc-3 {
+		padding: 35px 35px 40px 35px;
+		p {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.service-icon-3.white-overlay {
+    height: 200px;
+	&::before {
+		width: 60%;
+		border-radius: 50% 0 0 50%;
+	}
+}
+
+

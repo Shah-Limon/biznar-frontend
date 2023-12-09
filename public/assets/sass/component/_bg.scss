@@ -1,0 +1,168 @@
+
+/*-------------------------------------------------------
+04. BG css
+---------------------------------------------------------*/
+
+.colmn-2 {
+	column-count: 2;
+}
+
+.bg-fix {
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.hero-bg {
+	background-position: top left!important;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+}
+
+.pos-rel {
+	@include pos-rel;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rad-50 {
+	border-radius: 50%;
+}
+
+.c-pd {
+    padding: 0 7rem;
+}
+
+.s-pd {
+    padding: 0 12rem;
+}
+
+.h-100vh {
+	height: 100vh;
+}
+
+.bg {
+	background-color: var(--clr-bg);
+}
+
+.bg-theme {
+	background-color: var(--clr-def);
+}
+
+.bg-second {
+	background-color: var(--clr-def-2);
+}
+
+.bg-black {
+	background-color: var(--clr-black);
+}
+
+.bg-black-2 {
+	background-color: var(--clr-black-2);
+}
+
+.bg-grad {
+	background-image: var(--clr-gradient);
+}
+
+.bg-grad-2 {
+	background-image: var(--clr-gradient-2);
+}
+
+.bg-grad-3 {
+	background-image: var(--clr-gradient-3);
+}
+
+.bg-grad-4 {
+	background-image: var(--clr-gradient-4);
+}
+
+.bg-grad-5 {
+	background-image: var(--clr-gradient-5);
+}
+
+.bg-grad-6 {
+	background-image: var(--clr-gradient-6);
+}
+
+.bg-clr-1 {
+	background-color: var(--clr-2);
+}
+
+.bg-blur {
+    width: calc(100% - 120px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    padding: 32px 100px 36px 150px;
+    min-height: 140px;
+    z-index: 2;
+}
+
+.wh {
+	color: var(--clr-white);
+}
+
+.bg-overlay {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(rgb(0, 5, 33),100%,100%,0.83);
+		top: 0;
+		left: 0;
+	}
+	
+}
+
+.hero-overlay {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(rgb(0,22,47),100%,100%,.8);
+		top: 0;
+		left: 0;
+	}
+	
+}
+
+//background: rgba(,0.92);
+
+.hero-overlay-2 {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(var(--clr-def),100%,100%,.6);
+		top: 0;
+		left: 0;
+	}
+}
+
+.hero-overlay-3 {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(var(--clr-gradient-3),100%,100%,.8);
+		top: 0;
+		left: 0;
+	}
+}
+
+

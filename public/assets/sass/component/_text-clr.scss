@@ -1,0 +1,16 @@
+/*-------------------------------------------------------
+24. Text COlor css 
+---------------------------------------------------------*/
+
+.text-grad {
+	background: var(--clr-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-grad-2 {
+	background: var(--clr-gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

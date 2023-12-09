@@ -1,0 +1,159 @@
+
+/*-------------------------------------------------------
+14. Project css 
+---------------------------------------------------------*/
+
+@media (min-width: 1600px) {
+	.sd-container-fluid {
+		max-width: 1825px;
+	}
+}
+
+//Project Masonry
+
+.project-page {
+	.project-card {
+		overflow: hidden;
+		.project-img {
+			position:relative;
+			z-index: 1;
+			img {
+				border-radius: var(--rad-1);
+			}
+			.port-overlay {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				visibility: hidden;
+				-webkit-transition: all .5s ease;
+				transition: all .5s ease;
+				.port-shape{
+					span {
+						position: absolute;
+						background-color: var(--clr-def);
+						height: 10rem;
+						width: 10rem;
+						top: 50%;
+						left: 50%;
+						-webkit-transform: translate(-50%,-50%);
+						transform: translate(-50%,-50%);
+						-webkit-border-radius: 50%;
+						border-radius: 50%;
+						-webkit-transition: all .5s ease;
+						transition: all .5s ease;
+						&::before {
+							position: absolute;
+							z-index: -1;
+							content: '';
+							height: 0;
+							width: 0;
+							background-color: var(--clr-def);
+							opacity: .4;
+							top: 50%;
+							left: 50%;
+							-webkit-transform: translate(-50%,-50%);
+							transform: translate(-50%,-50%);
+							-webkit-border-radius: 50%;
+							border-radius: 50%;
+							-webkit-transition: all .5s ease;
+							transition: all .5s ease;
+						}
+						&::after {
+							position: absolute;
+							z-index: -1;
+							content: '';
+							height: 0;
+							width: 0;
+							background-color: var(--clr-def);
+							opacity: .3;
+							top: 50%;
+							left: 50%;
+							-webkit-transform: translate(-50%,-50%);
+							transform: translate(-50%,-50%);
+							-webkit-border-radius: 50%;
+							border-radius: 50%;
+							-webkit-transition: all .5s ease;
+							transition: all .5s ease;
+						}
+					}
+				}
+				.port-links {
+					.popup-link {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+						font-size: 2.2rem;
+						color: var(--clr-white);
+					}
+					.single-link {
+						position: absolute;
+						top: 34%;
+						left: 50%;
+						color: white;
+						font-size: 1.2rem;
+						height: 3.5rem;
+						width: 3.5rem;
+						line-height: 3.5rem;
+						text-align: center;
+						border-radius: 50%;
+						border: 3px solid rgba(255, 255, 255, 0.2);
+						transform: translate(-50%, 0);
+						background-color: var(--clr-def);
+						display: none;
+					}
+				}
+			}
+		}
+		&:hover {
+			.port-overlay {
+				opacity: 1;
+				visibility: visible;
+				.port-shape{
+					span {
+						&::before {
+							height: 13rem;
+							width: 13rem;
+						}
+						&::after {
+							height: 16rem;
+							width: 16rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.sec-btn-area {
+    margin-bottom: 3.2rem;
+}
+
+.filter-menu-style-1 {
+	button {
+		padding: 1.7rem 3rem 1.5rem 3rem;
+		margin-right: 1rem;
+		background: var(--clr-def-2);
+		color: var(--clr-white);
+		font-weight: 600;
+		border: none;
+		text-transform: capitalize;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		line-height: 1;
+		font-family: var(--font-2);
+		letter-spacing: 1px;
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+		&:hover,
+		&.active {
+			background-color: var(--clr-def);
+		}
+	}
+} 
+
